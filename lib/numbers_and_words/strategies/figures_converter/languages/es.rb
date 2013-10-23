@@ -29,7 +29,7 @@ module NumbersAndWords
           end
 
           def is_a_thousand?
-            FiguresArray::THOUSAND_CAPACITY == @current_capacity
+            @current_capacity % 2 != 0
           end
 
           def hundreds
